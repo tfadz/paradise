@@ -25,8 +25,13 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'paradise' ); ?></a>
 
 		<header id="masthead" class="site-header container par-header">
+			<div class="burger-menu" id="menu-btn">
+				<button class="burger"><i class="fa fa-bars" aria-hidden="true"></i></button>
+				<button class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+			</div>
+			
 			<div class="row">
-				<div class="col col-lg-8">
+				<div class="col col-lg-12">
 					<div class="site-branding">
 						<?php
 						the_custom_logo();
@@ -47,7 +52,7 @@
 				</div><!-- .site-branding -->
 			</div>
 			
-			<div class="col-lg-4 d-flex justify-content-end">
+			<div class="par-nav">
 				<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'paradise' ); ?></button>
 					<?php

@@ -1,12 +1,44 @@
 .par-header {
-	border-bottom: 1px solid #CCC;
-	padding-bottom: 2rem;
-	padding-top: 2rem;
-	margin-bottom: 2rem;
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
 
-	.site-branding {
-		img {
-			max-width: 200px;
-		}
-	}
+  .site-branding {
+    img {
+      max-width: 200px;
+    }
+  }
+}
+
+.burger-menu {
+  position: absolute;
+  right: 0;
+  z-index: 30;
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: .3s all;
+    &:hover {
+    	.fa {
+    		color: $yellow;
+    	}
+    }
+
+    .fa {
+      color: $pink;
+      font-size: 1.75rem;
+    }
+  }
+
+  .close-btn {
+    display: none;
+
+    .fa {
+    	color: $teal;
+    }
+  }
 }
