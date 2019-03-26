@@ -1,5 +1,27 @@
 // Home
 
 body.home {
-	// background: $yellow;
+	background: linear-gradient($pink, $yellow);
+}
+
+.par-home-work {
+	margin-top: 1rem;
+	a {
+		display: block;
+		width: 80%;
+		height: 400px;
+		background: $dark;
+		color: $white;
+		padding: 2rem;
+
+		&:nth-child(2) {
+			width: 60%;
+			height: 300px;
+		}
+
+		&:nth-child(odd) {
+			width: 80%;
+			height: 200px;
+		}
+	}
 }

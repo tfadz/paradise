@@ -20,7 +20,7 @@ jQuery(function($) {
   $burger.on('click', function(event) {
     $nav.animate({
       opacity: 1,
-      top: "32px"
+      top: "0"
     },
     300,
     function() {});
@@ -43,5 +43,18 @@ jQuery(function($) {
     $burger.show();
     event.preventDefault();
 
+  });
+});
+
+jQuery(function($) {
+  $(window).on("scroll", function(){
+    if
+      ($(window).scrollTop() > 50){
+      $(".par-header").addClass("active");
+    }
+    else
+    {
+      $(".par-header").removeClass("active");
+    }
   });
 });
