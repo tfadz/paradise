@@ -34,10 +34,10 @@ browserSync.init(files, {
 
 gulp.task('sass', function() {
     return gulp.src([
-        'node_modules/bootstrap-scss/bootstrap.scss',
+        'sass/style.scss',
+        'node_modules/bootstrap-scss/bootstrap-grid.scss',
         'node_modules/slick-slider/slick/slick.css',
         'node_modules/lity/dist/lity.css',
-        'sass/style.scss'
         ])
         .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: 'compressed' })

@@ -3,10 +3,8 @@
 <?php get_header(); ?>
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main container-fluid" role="main">
+    <main id="main" class="site-main container" role="main">
 
-<!--         <h1><a href="https://vimeo.com/326434337?autoplay=1" data-lity>My link!!</a></h1>
- -->
        <section class="row">
          <div class="par-slider">
             <?php if (have_rows('slider')) : while (have_rows('slider')) : the_row();
@@ -16,8 +14,8 @@
                 $hwhich = get_sub_field('image_or_video');
         
             ?>
-            <div>
-                <a href="<?php echo $hvideoL; ?> autoplay=1" data-lity><img src="<?php echo $himage; ?>" /></a>
+            <div class="par-slider__slide" style="background: url(<?php echo $himage ?>) no-repeat;background-size: cover;">
+               <a class="" href="<?php echo $hvideoL; ?>">project title</a>
             </div>
 
         <?php endwhile; endif; ?>

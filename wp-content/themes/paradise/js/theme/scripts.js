@@ -4,12 +4,9 @@ jQuery(function($) {
     dots: false,
     infinite: true,
     speed: 300,
-    fade: true,
+    fade: false,
     cssEase: 'ease-out',
-    slidesToShow: 1,
-    slidesToScroll: 1,
     centerMode: false,
-    variableWidth: false,
     swipeToSlide: true,
     swipe: true
     });
