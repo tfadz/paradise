@@ -15,7 +15,7 @@
         
             ?>
             <div class="par-slider__slide" style="background: url(<?php echo $himage ?>) no-repeat;background-size: cover;">
-               <a class="" href="<?php echo $hvideoL; ?>">project title</a>
+               <a class="" href="<?php echo $hvideoL; ?>?autoplay=1" data-lity><h2>BCBS Promotes Healthy Eating With Plate Size</h2></a>
             </div>
 
         <?php endwhile; endif; ?>
