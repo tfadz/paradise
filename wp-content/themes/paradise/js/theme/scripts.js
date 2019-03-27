@@ -14,21 +14,40 @@ jQuery(function($) {
 
 jQuery(function($) {
   $nav = $('.par-nav');
+  $header = $('.par-header');
   $burger = $('.burger');
   $close = $('.close-btn');
 
   $burger.on('click', function(event) {
-    $nav.animate({
-      opacity: 1,
-      top: "-1rem"
-    },
-    300,
-    function() {});
-    $(this).hide();
-    $close.show();
-    event.preventDefault();
+    
+    if($header.hasClass('active')) {
+      
+      $nav.animate({
+          opacity: 1,
+          top: "-10px"
+        },
+        300,
+        function() {});
+        $(this).hide();
+        $close.show();
+        event.preventDefault();
+    }
 
-  });
+    else {
+       $nav.animate({
+        opacity: 1,
+        top: "-24px"
+      },
+      300,
+      function() {});
+      $(this).hide();
+      $close.show();
+      event.preventDefault();
+
+    }
+ });
+
+
 
   $close.on('click', function(event) {
     $nav.animate({

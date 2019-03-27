@@ -24,13 +24,25 @@
 
 <section class="par-home-work container-fluid">
     <div class="row" id="macy-container">
-        <a href="">something</a>
-        <a href="">something</a>
-        <a href="">something</a>
-        <a href="">something</a>
-        <a href="">something</a>
-        <a href="">something</a>
-    </div>
+        <?php if (have_rows('home_work')) : while (have_rows('home_work')) : the_row();
+
+            $wthumb = get_sub_field('home_work_image');
+            $wtitle = get_sub_field('home_work_title');
+            $w_which = get_sub_field('link_to_page_or_modal');
+            $wmlink = get_sub_field('home_work_modal_link');
+
+            ?>
+
+            <?php if($w_which == 'page'):?>
+                <a style="background: url(<?php echo $wthumb ?>) no-repeat;background-size: cover;" class="" href="<?php echo $wmlink; ?>?autoplay=1" data-lity><h2><?php echo $wtitle; ?></h2></a>
+            <?php endif ?>
+
+            <?php if($w_which == 'modal'):?>
+                 <a style="background: url(<?php echo $wthumb ?>) no-repeat;background-size: cover;" class="" href="<?php echo $wmlink; ?>?autoplay=1" data-lity><h2><?php echo $wtitle; ?></h2></a>
+            <?php endif ?>
+
+     <?php endwhile; endif; ?>
+ </div>
 </section>
 <script src="<?php bloginfo('template_directory'); ?>/js/macy.js"></script>
 
