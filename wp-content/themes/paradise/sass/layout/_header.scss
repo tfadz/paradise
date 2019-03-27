@@ -1,23 +1,33 @@
 .par-header {
+  background: rgba($pink, 0);
   padding-bottom: .5rem;
-  padding-top: .5rem;
+  padding-top: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 0;
   position: fixed;
+  transition: .3s all ease-in;
   top: 0;
   z-index: 50;
-  margin: 1rem auto 0 auto;
+  margin: 0 auto;
   left: 0;
   right: 0;
+
   &.active {
-    background: rgba($pink, .9);
+    background: rgba($pink, 0.9);
+    padding-bottom: .25rem;
+    padding-top: .25rem;
+    width: 100% !important;
   }
 
   .site-branding {
     img {
       max-width: 200px;
     }
+  }
+
+  &__main {
+    position: relative;
   }
 }
 
@@ -31,12 +41,15 @@
     border: none;
     cursor: pointer;
     transition: .3s all;
-    &:hover {
-    	.fa {
-    		color: $blue;
-    	}
-    }
 
+    &:hover {
+      .fa {
+        color: $blue;
+      }
+    }
+  }
+
+  .burger {
     .fa {
       color: $white;
       font-size: 1.75rem;
@@ -45,9 +58,15 @@
 
   .close-btn {
     display: none;
+    background: rgba($yellow, 1);
+    border-radius: 0;
+    margin-right: 4.25rem;
+    margin-top: 1.15rem;
+    padding: .35rem .75rem;
 
     .fa {
-    	color: $pink;
+      color: $white;
+      font-size: 1.95rem;
     }
   }
 }

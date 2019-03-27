@@ -5,14 +5,19 @@ body.home {
 }
 
 .par-home-work {
-	margin-top: 1rem;
+	margin-top: .1rem;
+	background: $white;
+	padding-left: 0!important;
+	padding-right: 0!important;
 	a {
 		display: block;
 		width: 80%;
 		height: 400px;
-		background: $dark;
+		background: rgba($blue, .95);
 		color: $white;
 		padding: 2rem;
+		font-family: $serif;
+		font-size: 1.5rem;
 
 		&:nth-child(2) {
 			width: 60%;

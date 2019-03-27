@@ -20,7 +20,7 @@ jQuery(function($) {
   $burger.on('click', function(event) {
     $nav.animate({
       opacity: 1,
-      top: "0"
+      top: "-1rem"
     },
     300,
     function() {});
