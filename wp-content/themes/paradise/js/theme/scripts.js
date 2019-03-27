@@ -1,6 +1,6 @@
 jQuery(function($) {
   $('.par-slider').slick({
-    autoplay: false,
+    autoplay: true,
     dots: false,
     infinite: true,
     speed: 300,

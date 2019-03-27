@@ -1,12 +1,14 @@
 // Home
 
 body.home {
-  background: linear-gradient($pink, $blue);
+	background: $yellow;
 }
 
 .par-home-work {
   padding-left: 0 !important;
   padding-right: 0 !important;
+  border-top: 5px solid $yellow;
+  margin-bottom: 3rem;
 
   a {
     background: rgba($blue, 0.95);
@@ -16,10 +18,9 @@ body.home {
     padding: 1.25rem;
     position: relative;
     width: 80%;
-    box-shadow: 0 0 0 3px $white;
 
     &:before {
-      background: rgba($dark,.5);
+      background: rgba($dark, 0.5);
       content: "";
       filter: saturate(1);
       height: 100%;
@@ -33,28 +34,33 @@ body.home {
     }
 
     h2 {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      font-size: 1.25rem;
-      font-family: $serif;
-      text-transform: lowercase;
+      background: rgba($white, 0.75);
+      bottom: inherit;
+      top: 0;
+      color: $dark;
+      display: inline-block;
+      font-size: 1rem;
+      opacity: 0;
+      right: -1rem;
       margin: 0;
       padding: .25rem .5rem;
-      display: inline-block;
-      background: $yellow;
-      color: $blue--dark;
+      position: absolute;
+      transition: .3s all;
+      right: .25rem;
+      text-transform: uppercase;
       z-index: 20;
     }
 
     &:hover {
+      // box-shadow: 0 0 0 3px $pink;
+
       &:before {
         opacity: .5;
       }
 
       h2 {
-        background: $pink;
-        color: $white;
+        opacity: .8;
+        transform: translateX(0);
       }
     }
 

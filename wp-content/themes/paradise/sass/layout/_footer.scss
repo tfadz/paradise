@@ -1,9 +1,75 @@
 .par-footer {
-	font-size: .9rem;
-	padding-top: 2rem;
-	font-weight: 300;
+  font-size: .9rem;
+  padding-top: 3rem;
+  font-weight: 300;
+  border-top: 2px solid $gray;
+  font-size: .9rem;
 
-	a {
-		color: $pink;
-	}
+  &__main {
+    display: flex;
+
+    a {
+      color: $pink;
+    }
+  }
+
+  .footer-menu {
+    ul {
+      list-style: none;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 2rem;
+
+      li {
+        margin-right: 3rem;
+      }
+
+      li.menu-item-has-children > a {
+        padding-bottom: .5rem;
+        color: $pink;
+        text-transform: uppercase;
+        font-weight: $font-heavy;
+        display: inline-block;
+      }
+
+      a {
+        color: $dark;
+      }
+
+      ul.sub-menu {
+        display: block;
+        margin: 0;
+        padding: 0;
+
+        li {
+          padding: 0;
+          margin: 0;
+
+          a {
+            padding: .35rem 0;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-logo img {
+    max-width: 9rem;
+  }
+}
+
+body.home .par-footer {
+  color: $dark;
+  border-top: 2px solid $white;
+
+  .footer-menu {
+    li.menu-item-has-children > a {
+      color: $blue--dark;
+    }
+
+    a {
+      color: $dark;
+    }
+  }
 }

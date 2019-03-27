@@ -142,7 +142,7 @@
                     "label": "Thumbnail",
                     "name": "home_work_image",
                     "type": "image",
-                    "instructions": "",
+                    "instructions": "To download a thumbnail from movie go here: https:\/\/depone.dev\/video\/",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -258,5 +258,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1553705802
+    "modified": 1553712352
 }
