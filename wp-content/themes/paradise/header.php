@@ -33,7 +33,7 @@
 						<span>&nbsp;</span>
 						<span>&nbsp;</span>
 					</button>
-					<button class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+					<button class="close-btn"><!-- <i class="fa fa-times" aria-hidden="true"></i> --></button>
 				</div>
 
 				<div class="row">

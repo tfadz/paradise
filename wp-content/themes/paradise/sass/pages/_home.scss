@@ -30,6 +30,7 @@ body.home {
       opacity: 0;
       position: absolute;
       transition: .2s all ease-in-out;
+      transform: translateY(-3rem);
       top: 0;
       width: 100%;
       z-index: 10;
@@ -52,8 +53,9 @@ body.home {
       bottom: inherit;
       color: $white;
       display: inline-block;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: $font-heavy;
+      letter-spacing: .25rem;
       left: 0;
       margin: 0 auto;
       opacity: 0;
@@ -64,18 +66,18 @@ body.home {
       text-align: center;
       top: 25%;
       transition: .3s all;
-      width: 45%;
+      width: 50%;
       z-index: 40;
 
       &:before {
         content: "";
         height: 3px;
         background: $yellow;
-        width: 50%;
+        width: 30%;
         display: block;
         margin: 0 auto;
         position: absolute;
-        bottom: 0;
+        bottom: .5rem;
         right: 0;
         left: 0;
       }
@@ -85,7 +87,8 @@ body.home {
       // box-shadow: 0 0 0 3px $pink;
 
       &:before {
-        opacity: .5;
+        opacity: .45;
+        transform: translateY(0);
       }
 
       // span {
@@ -95,7 +98,7 @@ body.home {
 
       h2 {
         opacity: .8;
-        transform: translateX(0);
+        transform: translateY(-5x);
       }
     }
 

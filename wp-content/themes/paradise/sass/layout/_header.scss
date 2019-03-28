@@ -14,7 +14,7 @@
   right: 0;
 
   &.active {
-    background: rgba($pink, 0.9);
+    background: rgba($pink, 0.95);
     padding-bottom: .25rem;
     padding-top: .25rem;
     width: 100% !important;
@@ -80,9 +80,25 @@
     display: none;
     background: rgba($yellow, 1);
     border-radius: 0;
-    margin-right: .5rem;
-    padding: .35rem .65rem;
+    margin-right: .6rem;
+    padding: .4rem .8rem;
     margin-top: 0;
+    position: relative;
+
+    &:before {
+      content: "X";
+      font-size: 1.5rem;
+      color: $white;
+      height: 100%;
+      width: auto;
+      display: block;
+      font-weight: 600;
+    }
+
+    &:hover {
+      background: $pink;
+      color: $white;
+    }
 
     .fa {
       color: $white;

@@ -14,19 +14,19 @@
 </div><!-- #content -->
 
 <footer id="colophon" class="site-footer par-footer container">
-	<div class="row">
+	<div class="row par-footer__main">
 		
 		
-		<div class="col col-lg-3">
+		<div class="col col-sm-12 col-lg-3">
 			<div class="site-info">
 				
 				<div class="footer-logo"><?php the_custom_logo(); ?></div>
-				<div>&copy; Copyright <?php echo date("Y"); ?> Paradise</div>
+				<div class="copyright">&copy; Copyright <?php echo date("Y"); ?> Paradise</div>
 
 			</div><!-- .site-info -->
 		</div>
 
-		<div class="col col-lg-6">
+		<div class="col col-lg-5">
 			<div class="footer-menu">
 				<?php
 				wp_nav_menu( array(
@@ -39,14 +39,18 @@
 			</div><!-- .site-info -->
 		</div>
 
-		<div class="col col-lg-3">
+		<div class="col col-sm-12 col-lg-2">
 			<div class="site-info">
-				
-				<p>Michigan Ave
-					Suite 310
-				Chicago, IL</p>
+				<h3>Find Us</h3>
+				<?php the_field('footer_address', 'options') ?>
 
-				<p>Call Us</p>
+			</div><!-- .site-info -->
+		</div>
+
+		<div class="col col-sm-12 col-lg-2">
+			<div class="site-info">
+				<h3>Call Us</h3>
+				<?php the_field('footer_phone', 'options') ?>
 
 			</div><!-- .site-info -->
 		</div>

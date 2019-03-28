@@ -18,8 +18,8 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "table",
-            "button_label": "Add video link",
+            "layout": "block",
+            "button_label": "Add slide",
             "sub_fields": [
                 {
                     "key": "field_5c99369ff606d",
@@ -52,6 +52,25 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": ""
+                },
+                {
+                    "key": "field_5c9ce104884bc",
+                    "label": "Title",
+                    "name": "slider_home_title",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": "br"
                 },
                 {
                     "key": "field_5c998321b2b54",
@@ -96,6 +115,40 @@
                     "allow_null": 0,
                     "allow_archives": 1,
                     "multiple": 0
+                },
+                {
+                    "key": "field_5c9ce19f72153",
+                    "label": "Type",
+                    "name": "slider_home_type",
+                    "type": "text",
+                    "instructions": "Add type (Commercial, Corporate,etc.)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c9ce86ed9643",
+                    "label": "Change Type Color",
+                    "name": "change_type_color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#444444"
                 }
             ]
         },
@@ -258,5 +311,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1553712352
+    "modified": 1553787125
 }

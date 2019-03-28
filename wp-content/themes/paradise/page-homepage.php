@@ -12,10 +12,13 @@
             $himage = get_sub_field('slider_home_image');
             $hvideoL = get_sub_field('slide_home_video_link');
             $hwhich = get_sub_field('image_or_video');
+            $htitle =  get_sub_field('slider_home_title');
+            $htype =  get_sub_field('slider_home_type');
+            $htcolor = get_sub_field('change_type_color');
 
             ?>
             <div class="par-slider__slide" style="background: url(<?php echo $himage ?>) no-repeat;background-size: cover;">
-             <a class="" href="<?php echo $hvideoL; ?>?autoplay=1" data-lity><h2><small>commercial:</small>BCBS Promotes Healthy Eating With Plate Size</h2></a>
+             <a class="" href="<?php echo $hvideoL; ?>?autoplay=1" data-lity><h2><small style="color:<?php echo $htcolor ?>;"><?php echo $htype ?></small><?php echo $htitle ?></h2></a>
          </div>
 
      <?php endwhile; endif; ?>
