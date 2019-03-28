@@ -22,7 +22,7 @@ gulp.task('browser-sync', function() {
 
 // Initial Browsersync with PHP Server
 browserSync.init(files, {
-    proxy: "http://paradise.local/" // Change to match local host address
+    proxy: "http://paradise.dev/" // Change to match local host address
 
   });
 
