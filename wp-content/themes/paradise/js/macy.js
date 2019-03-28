@@ -10,7 +10,7 @@ jQuery(function($) {
 	    debug: false,
 	    mobileFirst: true,
 	    columns: 1,
-	    margin: 0,
+	    margin: 4,
 	    breakAt: {
 	        1200: 3,
 	        940: 3,

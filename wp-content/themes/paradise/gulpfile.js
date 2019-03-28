@@ -34,10 +34,10 @@ browserSync.init(files, {
 
 gulp.task('sass', function() {
     return gulp.src([
-        'sass/style.scss',
-        'node_modules/bootstrap-scss/bootstrap-grid.scss',
-        'node_modules/slick-slider/slick/slick.css',
         'node_modules/lity/dist/lity.css',
+        'node_modules/bootstrap-scss/bootstrap-grid.scss',
+        'sass/style.scss',
+        'node_modules/slick-slider/slick/slick.css',
         'node_modules/aos/dist/aos.css',
 
         ])

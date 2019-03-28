@@ -40,7 +40,7 @@
       transition: .5s all ease-in-out;
       z-index: 10;
 
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: $phone-wide) {
         height: 300px;
       }
 
@@ -88,6 +88,7 @@
         font-weight: 700;
         letter-spacing: -.15rem;
         line-height: 100%;
+        opacity: 0;
         margin: 0;
         max-width: 400px;
         padding: 0;
@@ -96,10 +97,12 @@
         text-transform: uppercase;
         transition: .3s all ease-in-out;
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: $phone-wide) {
           font-size: 2rem;
           width: auto;
           right: 2%;
+          max-width: 300px;
+          right: 25%;
         }
 
         // &:before {
@@ -123,9 +126,13 @@
           margin-bottom: 0;
           padding-bottom: .5rem;
           position: relative;
+
           // text-shadow: 3px 3px 0 rgba($white, 0.1), -1px -1px 0 rgba($white, 0.1), 1px -1px 0 rgba($white, 0.1), -1px 1px 0 rgba($white, 0.1), 1px 1px 0 rgba($white, 0.1);
           top: -1rem;
 
+          @media screen and (max-width: $phone-wide) {
+            font-size: 1rem;
+          }
 
           &:after {
             content: "";
@@ -141,6 +148,18 @@
     }
   }
 
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   .slick-slide {
     background: $pink;
     margin: 0;
@@ -150,6 +169,14 @@
 
     &:focus {
       outline: none;
+    }
+  }
+
+  .slick-active {
+    h2 {
+      opacity: 1;
+      transition: all 1s ease-in-out;
+      transform: translateX(2rem);
     }
   }
 
@@ -165,6 +192,12 @@
     height: 6rem;
     width: 6.5rem;
 
+    @media screen and (max-width: $phone-wide) {
+      bottom: 64px;
+      height: 4rem;
+      width: 3.5rem;
+    }
+
     &:before {
       content: "";
       background-image: url("./assets/images/arrow.svg");
@@ -177,6 +210,12 @@
       left: 0;
       right: 0;
       top: 24px;
+
+      @media screen and (max-width: $phone-wide) {
+        background-size: 35px;
+        left: 20%;
+        top: 18px;
+      }
 
       // content: "\f105";
       // color: rgba($white, 0.85);
@@ -219,6 +258,11 @@
     position: absolute;
     z-index: 2;
 
+    @media screen and (max-width: $phone-wide) {
+      width: 3.5rem;
+      height: 4rem;
+    }
+
     &:before {
       content: "";
       background-image: url("./assets/images/arrow.svg");
@@ -233,6 +277,13 @@
       top: 24px;
       transform: scaleX(-1);
       filter: FlipH;
+
+      @media screen and (max-width: $phone-wide) {
+        background-size: 35px;
+        left: 0;
+        width: 40px;
+        top: 18px;
+      }
 
       // content: "\f104";
       // color: rgba($white, 0.85);

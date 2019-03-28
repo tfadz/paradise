@@ -26,7 +26,7 @@
 			</div><!-- .site-info -->
 		</div>
 
-		<div class="col col-lg-5">
+		<div class="col col-sm-12 col-lg-5">
 			<div class="footer-menu">
 				<?php
 				wp_nav_menu( array(
@@ -39,7 +39,7 @@
 			</div><!-- .site-info -->
 		</div>
 
-		<div class="col col-sm-12 col-lg-2">
+		<div class="col col-sm-12 col-lg-2 footer-address">
 			<div class="site-info">
 				<h3>Find Us</h3>
 				<?php the_field('footer_address', 'options') ?>
@@ -47,7 +47,7 @@
 			</div><!-- .site-info -->
 		</div>
 
-		<div class="col col-sm-12 col-lg-2">
+		<div class="col col-sm-12 col-lg-2 footer-phone">
 			<div class="site-info">
 				<h3>Call Us</h3>
 				<?php the_field('footer_phone', 'options') ?>

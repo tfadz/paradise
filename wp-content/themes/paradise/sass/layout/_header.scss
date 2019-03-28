@@ -23,6 +23,10 @@
   .site-branding {
     img {
       max-width: 200px;
+
+      @media screen and (max-width: $phone-wide) {
+        max-width: 160px;
+      }
     }
   }
 
@@ -51,6 +55,7 @@
 
   .burger {
     display: block;
+    transition: .3s all;
 
     span {
       background: rgba($white, 0.8);
@@ -58,6 +63,7 @@
       width: 35px;
       display: block;
       margin-bottom: .29rem;
+      transition: .3s all;
 
       &:nth-child(3) {
         margin-left: -.5rem;
@@ -67,6 +73,14 @@
     &:hover {
       span {
         background: $pink;
+
+        &:nth-child(2) {
+          transform: translateX(-0.35rem);
+        }
+
+        &:nth-child(4) {
+          transform: translateX(0.25rem);
+        }
       }
     }
 
