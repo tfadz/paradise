@@ -1,7 +1,10 @@
 .par-nav {
   color: $pink;
   position: absolute;
-  background: rgba($white, 0.95);
+  background-image: url("./assets/images/goldfish.gif");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-color: rgba($white, 0.95);
   display: flex;
   justify-content: center;
   width: 100%;
@@ -77,10 +80,10 @@
           text-transform: lowercase;
           display: inline-block;
           font-size: 1rem;
-          padding: 0 .3rem;
+          padding: .1rem .3rem;
 
           &:hover {
-            background: linear-gradient($yellow, $pink--light);
+            background: $blue;
             color: $white;
           }
         }

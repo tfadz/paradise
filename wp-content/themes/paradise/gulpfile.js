@@ -38,6 +38,8 @@ gulp.task('sass', function() {
         'node_modules/bootstrap-scss/bootstrap-grid.scss',
         'node_modules/slick-slider/slick/slick.css',
         'node_modules/lity/dist/lity.css',
+        'node_modules/aos/dist/aos.css',
+
         ])
         .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: 'compressed' })
@@ -61,6 +63,7 @@ gulp.task('sass', function() {
 gulp.task('js', function () {
     return gulp.src([
         'node_modules/slick-slider/slick/slick.js',
+        'node_modules/aos/dist/aos.js',
         'node_modules/lity/dist/lity.js',
         'js/theme/*.js'
     ])

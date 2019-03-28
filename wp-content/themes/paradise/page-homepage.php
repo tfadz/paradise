@@ -38,7 +38,7 @@
             <?php endif ?>
 
             <?php if($w_which == 'modal'):?>
-                 <a style="background: url(<?php echo $wthumb ?>) no-repeat;background-size: cover;" class="" href="<?php echo $wmlink; ?>?autoplay=1" data-lity><h2><?php echo $wtitle; ?></h2></a>
+                 <a style="background: url(<?php echo $wthumb ?>) no-repeat;background-size: cover;" class="" href="<?php echo $wmlink; ?>?autoplay=1" data-lity><span><h2><?php echo $wtitle; ?></h2></span></a>
             <?php endif ?>
 
      <?php endwhile; endif; ?>

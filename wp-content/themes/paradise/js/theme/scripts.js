@@ -1,6 +1,6 @@
 jQuery(function($) {
   $('.par-slider').slick({
-    autoplay: true,
+    autoplay: false,
     dots: false,
     infinite: true,
     speed: 300,
@@ -76,4 +76,17 @@ jQuery(function($) {
       $(".par-header").removeClass("active");
     }
   });
+});
+
+// Animate on Scroll
+jQuery(function($) {
+
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: 'ease-in-sine',
+    delay: 100,
+    disable: 'mobile'
+  });
+
 });

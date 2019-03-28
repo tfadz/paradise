@@ -30,9 +30,10 @@
       height: 100%;
       transition: .5s all ease-in-out;
       z-index: 10;
-      @media screen and (max-width:480px) {
-          height: 300px;
-        }
+
+      @media screen and (max-width: 480px) {
+        height: 300px;
+      }
 
       // &:before {
       //   background: linear-gradient($blue--dark, $dark);
@@ -60,21 +61,21 @@
           color: $pink;
 
           // text-shadow: 3px 3px 0 rgba($pink, 0.4), -1px -1px 0 rgba($pink, 0.4), 1px -1px 0 rgba($pink, 0.4), -1px 1px 0 rgba($pink, 0.4), 1px 1px 0 rgba($pink, 0.4);
-          transform: translateX(-1rem);
+          // transform: translateX(-1rem);
 
           small {
-            &:after {
-              width: 50px;
-            }
+            // &:after {
+            //   width: 50px;
+            // }
           }
         }
       }
 
       h2 {
-        bottom: 1.2rem;
-        font-weight: 800;
+        bottom: 3.2rem;
+        font-weight: 700;
         display: block;
-        font-size: 3.85rem;
+        font-size: 3.25rem;
         color: $white;
         text-transform: uppercase;
         letter-spacing: -.15rem;
@@ -83,10 +84,10 @@
         padding: 0;
         position: absolute;
         transition: .3s all ease-in-out;
-        right: 5rem;
-        max-width: 450px;
+        right: 15%;
+        max-width: 400px;
 
-        @media screen and (max-width:480px) {
+        @media screen and (max-width: 480px) {
           font-size: 2rem;
           width: auto;
           right: 2%;
@@ -106,21 +107,21 @@
         // }
 
         small {
-          color: $blue;
-          font-size: 1.35rem;
-          line-height: normal;
+          color: $dark;
           display: block;
-          padding-bottom: .5rem;
-          text-shadow: none;
-          margin-bottom: 0;
-          position: relative;
-          letter-spacing: .25rem;
-          top: -1rem;
+          font-size: 1.45rem;
           font-weight: 600;
+          letter-spacing: .15rem;
+          line-height: normal;
+          margin-bottom: 0;
+          padding-bottom: .5rem;
+          position: relative;
+          text-shadow: none;
+          top: -1rem;
 
           &:after {
             content: "";
-            border-top: 3px solid $pink;
+            border-top: 4px solid $yellow;
             width: 100px;
             bottom: 0rem;
             height: auto;
@@ -145,75 +146,110 @@
   }
 
   .slick-next {
-    background: none;
-    box-shadow: 0 0 0 1px rgba($white, 0.6);
-    background-size: 16px;
-    background-position: center center;
+    background: rgba($yellow, .92);
+    // box-shadow: 0 0 0 1px rgba($white, 0.6);
+    // background-size: 16px;
+    // background-position: center center;
     border: none;
     border-radius: 0;
-    height: 35px;
     right: 0;
     opacity: 1;
     position: absolute;
-    top: 46%;
-    width: 35px;
+    top: inherit;
+    bottom: 0;
+    height: 6rem;
+    width: 6.5rem;
 
     &:before {
-      content: "\f105";
-      color: rgba($white, 0.85);
-      display: inline-block;
-      font-family: FontAwesome;
-      font-size: 1.5rem;
-      height: auto;
-      margin-left: 0;
+      content: "";
+      background-image: url("./assets/images/arrow.svg");
+      background-repeat: no-repeat;
+      opacity: .85;
+      height: 100%;
+      width: 60px;
+      margin: 0 auto;
+      position: absolute;
+      left: 0;
       right: 0;
-      width: 20px;
-      position: relative;
-      top: 33%;
+      top: 24px;
+      // content: "\f105";
+      // color: rgba($white, 0.85);
+      // display: inline-block;
+      // font-family: FontAwesome;
+      // font-size: 3rem;
+      // height: auto;
+      // margin-left: 0;
+      // right: 0;
+      // width: 20px;
+      // position: relative;
+      // top: 33%;
     }
 
-    &:hover, &:focus, &:active {
-      background: rgba($pink, 1);
+    &:hover {
+      background: rgba($dark, .8);
       box-shadow: none;
       background-size: 16px;
       background-position: center center;
       cursor: pointer;
+
+      &:before {
+        color: $purple;
+      }
     }
   }
 
   .slick-prev {
-    background: none;
-    box-shadow: 0 0 0 1px rgba($white, 0.6);
+    background: rgba($purple, .92);
+    // box-shadow: 0 0 0 1px rgba($white, 0.6);
     border: none;
-    background-position: center center;
+    // background-position: center center;
     border-radius: 0;
-    height: 35px;
-    left: 0;
+    height: 6rem;
+    width: 6.5rem;
+    left: inherit;
+    right: 0;
+    top: inherit;
+    bottom: 96px;
     opacity: 1;
     position: absolute;
-    top: 46%;
-    width: 35px;
     z-index: 2;
 
     &:before {
-      content: "\f104";
-      color: rgba($white, 0.85);
-      display: inline-block;
-      font-family: FontAwesome;
-      font-size: 1.5rem;
-      height: auto;
-      margin-left: -6px;
+       content: "";
+      background-image: url("./assets/images/arrow.svg");
+      background-repeat: no-repeat;
+      opacity: .85;
+      height: 100%;
+      width: 60px;
+      margin: 0 auto;
+      position: absolute;
+      left: 0;
       right: 0;
-      position: relative;
-      top: 33%;
+      top: 24px;
+      transform: scaleX(-1);
+      filter: FlipH;
+      // content: "\f104";
+      // color: rgba($white, 0.85);
+      // display: inline-block;
+      // font-family: FontAwesome;
+      // font-size: 3rem;
+      // height: auto;
+      // margin-left: -6px;
+      // right: 0;
+      // position: relative;
+      // top: 33%;
     }
 
-    &:hover, &:focus, &:active {
-      background: rgba($pink, 1);
+    &:hover {
+      background: rgba($dark, .8);
       box-shadow: none;
+      color: $white;
       background-size: 16px;
       background-position: center center;
       cursor: pointer;
+       &:before {
+        color: $purple;
+       }
     }
   }
 }

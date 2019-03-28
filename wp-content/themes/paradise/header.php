@@ -27,7 +27,12 @@
 		<header id="masthead" class="site-header container-fluid par-header">
 			<div class="container par-header__main">
 				<div class="burger-menu" id="menu-btn">
-					<button class="burger"><i class="fa fa-bars" aria-hidden="true"></i></button>
+					<button class="burger">
+						<span>&nbsp;</span>
+						<span>&nbsp;</span>
+						<span>&nbsp;</span>
+						<span>&nbsp;</span>
+					</button>
 					<button class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
 				</div>
 

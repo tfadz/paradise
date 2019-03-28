@@ -2,7 +2,7 @@
   font-size: .9rem;
   padding-top: 3rem;
   font-weight: 300;
-  border-top: 2px solid $gray;
+  border-top: 2px solid $yellow;
   font-size: .9rem;
 
   &__main {
@@ -59,17 +59,17 @@
   }
 }
 
-body.home .par-footer {
-  color: $dark;
-  border-top: 2px solid $white;
+// body.home .par-footer {
+//   color: $dark;
+//   border-top: 2px solid $white;
 
-  .footer-menu {
-    li.menu-item-has-children > a {
-      color: $blue--dark;
-    }
+//   .footer-menu {
+//     li.menu-item-has-children > a {
+//       color: $blue--dark;
+//     }
 
-    a {
-      color: $dark;
-    }
-  }
-}
+//     a {
+//       color: $dark;
+//     }
+//   }
+// }
