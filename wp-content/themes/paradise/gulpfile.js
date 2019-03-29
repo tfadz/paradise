@@ -22,7 +22,7 @@ gulp.task('browser-sync', function() {
 
 // Initial Browsersync with PHP Server
 browserSync.init(files, {
-    proxy: "http://paradise.local" // Change to match local host address
+    proxy: "http://localhost:8888/paradise" // Change to match local host address
 
   });
 
@@ -35,8 +35,8 @@ browserSync.init(files, {
 gulp.task('sass', function() {
     return gulp.src([
         'node_modules/lity/dist/lity.css',
-        'node_modules/bootstrap-scss/bootstrap-grid.scss',
         'sass/style.scss',
+        'node_modules/bootstrap-scss/bootstrap-grid.scss',
         'node_modules/slick-slider/slick/slick.css',
         'node_modules/aos/dist/aos.css',
 
