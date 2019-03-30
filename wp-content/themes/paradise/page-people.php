@@ -28,8 +28,10 @@
 
                 <?php while ( $query_people->have_posts() ) : $query_people->the_post(); ?>
                    <li><a href="<?php the_permalink(); ?>">
-                      <h2><?php the_title() ?></h2>
+
                       <figure><img src="<?php the_field('p_image') ?>" /></figure></a>
+                      <h2><?php the_title() ?></h2>
+
 
                   </li>
               <?php endwhile; ?> 
