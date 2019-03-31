@@ -1,0 +1,50 @@
+{
+    "key": "group_5c9e8d82b4c8c",
+    "title": "People",
+    "fields": [
+        {
+            "key": "field_5ca01698736f6",
+            "label": "Title",
+            "name": "p_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "people"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt",
+        "discussion",
+        "comments",
+        "author",
+        "format",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1553995486
+}
