@@ -17,6 +17,7 @@
 	<?php paradise_post_thumbnail(); ?>
 
 	<div class="entry-content">
+		<?php the_field('p_title') ?>
 		<?php
 		the_content();
 

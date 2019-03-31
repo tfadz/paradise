@@ -12,9 +12,9 @@
   }
 }
 
-body:not(home) {
+body:not(.home) {
   .site-content {
     position: relative;
-    padding-top: 4rem;
+    padding-top: 5rem;
   }
 }

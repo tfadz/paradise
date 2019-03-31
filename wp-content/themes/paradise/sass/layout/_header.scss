@@ -13,6 +13,7 @@
   left: 0;
   right: 0;
 
+
   &.active {
     background: rgba($pink, 0.95);
     padding-bottom: .25rem;
@@ -32,6 +33,12 @@
 
   &__main {
     position: relative;
+  }
+}
+
+body:not(.home) {
+  .par-header {
+    background: $pink;
   }
 }
 

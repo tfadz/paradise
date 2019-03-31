@@ -55,7 +55,9 @@
     li.menu-item-has-children > a {
       padding-bottom: .5rem;
       font-weight: 600;
-      cursor: auto;
+      &:hover {
+        color: $blue;
+      }
     }
 
     a {

@@ -37,7 +37,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col col-lg-12">
+					<div>
 						<div class="site-branding">
 							<?php
 							the_custom_logo();

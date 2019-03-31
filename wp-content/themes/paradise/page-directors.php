@@ -16,7 +16,7 @@
                           'posts_per_page' => '-1',
                           'orderby' => 'date',
                           'order' => 'ASC',
-                          'category_name' => 'Directors'
+                          'category_name' => 'directors'
                       );
 
                   // The Query
@@ -27,7 +27,10 @@
 
 
                       <?php while ( $query_people->have_posts() ) : $query_people->the_post(); ?>
-                        <div><?php the_title() ?></div>
+                        <a href="<?php the_permalink(); ?>">
+
+                      <figure><?php the_post_thumbnail(); ?></figure></a>
+                      <h2><?php the_title() ?></h2>
                     </ul>
 
                 <?php endwhile; ?> 
