@@ -11,3 +11,10 @@
     top: 5%;
   }
 }
+
+body:not(home) {
+  .site-content {
+    position: relative;
+    padding-top: 4rem;
+  }
+}

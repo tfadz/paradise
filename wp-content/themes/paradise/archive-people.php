@@ -18,18 +18,19 @@ get_header();
 
           <header class="page-header">
             <?php
-            the_archive_title( '<h1 class="page-title">', '</h1>' );
+            // the_archive_title( '<h1 class="page-title">', '</h1>' );
             the_archive_description( '<div class="archive-description">', '</div>' );
             ?>
         </header><!-- .page-header -->
 
         <div class="row">
+            <div class="col col-lg-12">
 
-            <section class="par-staff">
-              <?php
-              /* Start the Loop */
-              while ( have_posts() ) :
-                the_post();
+                <section class="par-staff">
+                  <?php
+                  /* Start the Loop */
+                  while ( have_posts() ) :
+                    the_post();
 
         /*
          * Include the Post-Type-specific template for the content.
@@ -49,6 +50,7 @@ else :
 endif;
 ?>
 </section>
+</div>
 </div>
 </main><!-- #main -->
 </div><!-- #primary -->

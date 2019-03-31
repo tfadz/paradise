@@ -226,7 +226,6 @@ function custom_post_type() {
     );
     $args = array(
         'label'               => __( 'People', 'text_domain' ),
-        'description'         => __( 'List of people in the company', 'text_domain' ),
         'labels'              => $labels,
         'taxonomies'          => array( 'category', 'post_tag' ),
         'hierarchical'        => false,
@@ -239,7 +238,7 @@ function custom_post_type() {
         'menu_icon'           => 'dashicons-groups',
         'can_export'          => true,
         'has_archive'         => true,
-        'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+        'supports'            => array( 'title', 'editor', 'author', 'thumbnail' ),
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
         'capability_type'     => 'page',
