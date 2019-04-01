@@ -9,7 +9,8 @@ html {
 }
 
 body {
-	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+  background-image: url("./assets/images/birds.png");
+  background-color: $white;
 }
 
 hr {
