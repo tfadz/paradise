@@ -7,6 +7,7 @@
 
       <section class="row">
         <div class="col col-12" style="padding-top: 5rem;">
+            <h1 class="entry-title">The Editors</h1>
           <div class="par-staff">
             <?php 
 
